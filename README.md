@@ -11,6 +11,9 @@
   <a href="https://codeforces.com/profile/ryuga01" target="_blank">
     <img src="https://assets.codeforces.com/users/kguseva/comments/cf.png" height="25" alt="codeforces logo"  />
   </a>
+  <a href="https://www.codechef.com/users/rahul_singh36" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/en/7/7b/Codechef%28new%29_logo.svg" height="25" alt="codechef logo"  />
+  </a>
 </div>
 
 ###
