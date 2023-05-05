@@ -8,7 +8,7 @@
   <a href="https://www.linkedin.com/in/rahul-singh-546676240" target="_blank">
     <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="linkedin logo"  />
   </a>
-  <a href="https://www.linkedin.com/in/rahul-singh-546676240" target="_blank">
+  <a href="https://codeforces.com/profile/ryuga01" target="_blank">
     <img src="https://assets.codeforces.com/users/kguseva/comments/cf.png" height="25" alt="codeforces logo"  />
   </a>
 </div>
