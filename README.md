@@ -22,14 +22,6 @@
 
 ###
 
-<h3 align="left">👩‍💻  About Me</h3>
-
-###
-
-<p align="left">I'm Rahul Singh from India<br><br>- 📚 I'm currently learning React<br>- ⚡ In my free time I  play Basketball</p>
-
-###
-
 <h3 align="left">🛠 Language and tools</h3>
 
 ###
