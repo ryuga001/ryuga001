@@ -3,8 +3,7 @@
     <p>👋 Hi, I’m Rahul Singh</p>
   </h1>
   <p>👀 I’m experienced in Full-Stack Developement</p>
-  <p>🌱 I’m currently learning webRTC</p>
-  <p>💞️ I’m looking to collaborate on web and mobile application development projects</p>  
+
 </div>
 
 ###
