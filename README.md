@@ -1,123 +1,327 @@
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Rahul%20Singh&fontSize=58&fontColor=ffffff&fontAlignY=36&desc=Software%20Development%20Engineer%20%E2%80%A2%20Distributed%20Systems%20%E2%80%A2%20Data%20Security&descAlignY=58&descSize=17" alt="header" />
+# Rahul Singh
 
-<p align="center">
-  I design <b>fault-tolerant, high-throughput backend systems</b> that stay correct under load, failure and multi-tenant pressure,<br/>
-  and ship them with real testing and CI/CD.
-</p>
+**Software Development Engineer · Backend · Distributed Systems · Data Security**
 
-<p align="center">
-  <a href="https://me.ryuga.space/en"><img src="https://img.shields.io/badge/Portfolio-111827?style=for-the-badge&logo=firefox&logoColor=FF7139" /></a>
-  <a href="https://www.linkedin.com/in/rahul-singh-546676240/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-  <a href="mailto:rahul0singh003@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
-  <a href="https://codeforces.com/profile/ryuga01"><img src="https://img.shields.io/badge/Codeforces-Specialist-1F8ACB?style=for-the-badge&logo=codeforces&logoColor=white" /></a>
-  <a href="https://www.codechef.com/users/rahul_singh36"><img src="https://img.shields.io/badge/CodeChef-3★-964B00?style=for-the-badge&logo=codechef&logoColor=white" /></a>
-  <a href="https://leetcode.com/u/r_singh"><img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=white" /></a>
+I build backend systems that deal with **concurrency, high-throughput workloads, multi-tenancy, asynchronous processing, and data security**.
+
+Currently working mostly with **Java, Go, Redis, RabbitMQ, MongoDB, PostgreSQL, AWS, and Next.js**.
+
+<p align="left">
+  <a href="https://me.ryuga.space/en">
+    <img alt="Portfolio" src="https://img.shields.io/badge/Portfolio-111827?style=for-the-badge&logo=firefox&logoColor=FF7139" />
+  </a>
+  <a href="https://www.linkedin.com/in/rahul-singh-546676240/">
+    <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
+  </a>
+  <a href="mailto:rahul0singh003@gmail.com">
+    <img alt="Email" src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
+  </a>
+  <a href="https://codeforces.com/profile/ryuga01">
+    <img alt="Codeforces" src="https://img.shields.io/badge/Codeforces-Specialist-1F8ACB?style=for-the-badge&logo=codeforces&logoColor=white" />
+  </a>
+  <a href="https://www.codechef.com/users/rahul_singh36">
+    <img alt="CodeChef" src="https://img.shields.io/badge/CodeChef-3★-964B00?style=for-the-badge&logo=codechef&logoColor=white" />
+  </a>
+  <a href="https://leetcode.com/u/r_singh">
+    <img alt="LeetCode" src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=white" />
+  </a>
 </p>
 
 ---
 
-## ⚡ Impact at a Glance
+## What I Like Building
 
-<table align="center">
-  <tr>
-    <td align="center" width="25%"><h2>2,000+</h2><b>events / sec</b><br/><sub>SIEM log forwarding<br/>zero message loss</sub></td>
-    <td align="center" width="25%"><h2>10M+</h2><b>events / run</b><br/><sub>distributed bulk export<br/>fair across 100+ tenants</sub></td>
-    <td align="center" width="25%"><h2>100+ × 100+</h2><b>tenants × devices</b><br/><sub>content-aware DLP<br/>offline detection</sub></td>
-    <td align="center" width="25%"><h2>4</h2><b>cloud sources</b><br/><sub>S3 · Azure Blob<br/>Google Drive · SharePoint</sub></td>
-  </tr>
-</table>
+I enjoy working on problems where the interesting part isn't just making the API work, but making the system behave correctly when things get difficult.
+
+- ⚙️ **Distributed & concurrent systems**
+- 🚦 **Rate limiting, backpressure & fair scheduling**
+- 📬 **Message queues, streams & asynchronous processing**
+- 🏢 **Multi-tenant backend architectures**
+- 🔐 **Data security & content inspection**
+- 🔎 **Large-scale file discovery & processing**
+- ☁️ **Cloud integrations & storage systems**
+- 🧪 **Testing, observability & failure handling**
+
+Some engineering problems I've worked on include:
+
+> How do you prevent one tenant from consuming all available workers?
+
+> How do you handle millions of events without allowing memory usage to grow without bounds?
+
+> How do you process large files without loading them entirely into memory?
+
+> How do you keep asynchronous delivery reliable when external systems are slow or unavailable?
+
+These are the kinds of problems I like exploring.
 
 ---
 
-## 🧠 What I Build
+## 🚀 Featured Project
 
-### 1. SIEM Log-Forwarding Microservice
-> Lock-free pipeline sustaining **2,000+ events/sec with zero message loss**
+### 🔐 [SecurePlus](https://github.com/ryuga001/SecurePlus)
 
-HTTP/TCP delivery in JSON and Syslog formats, built on the **LMAX Disruptor**, with per-vendor rate limits enforced on the way out.
+**Multi-tenant outbound email security platform**
 
-```mermaid
-flowchart LR
-    A[Incoming events] --> B[Disruptor<br/>lock-free ring buffer]
-    B --> C[Per-vendor<br/>rate limiter]
-    C --> D[HTTP / TCP<br/>JSON · Syslog]
+SecurePlus is a backend-heavy security system I built end to end to explore **email security, asynchronous delivery, multi-tenancy, policy enforcement, and distributed system design**.
+
+```text
+SMTP
+ │
+ ▼
+┌─────────────────────┐
+│   Policy Engine     │
+│                     │
+│  Rules + Inspection │
+└──────────┬──────────┘
+           │
+           ▼
+     DKIM Signing
+           │
+           ▼
+   Async Delivery
+           │
+           ▼
+      Recipient MX
 ```
 
-### 2. Distributed Bulk-Export Pipeline
-> Processes **10M+ security events per run** with fair scheduling across **100+ tenants**
+### What it handles
 
-Built with **Java, Spring Batch, AWS S3, Redis and RabbitMQ**. Per-tenant Redis token buckets and processing-time quotas, plus RabbitMQ priority queuing, remove noisy-neighbor starvation.
+- Multi-tenant email policies
+- Content and rule inspection
+- DKIM signing
+- Asynchronous delivery
+- Recipient MX retry/backoff
+- Delivery auditing
+- Security incidents
+- Role-based administration
+- Tenant configuration caching
+- Object storage for tenant assets
 
-```mermaid
-flowchart LR
-    A[Export request] --> B{{RabbitMQ<br/>priority queue}}
-    B --> C[Spring Batch<br/>workers]
-    R[(Redis<br/>token bucket · time quota<br/>per tenant)] -.-> C
-    C --> D[(AWS S3)]
+### Architecture
+
+```text
+                    ┌───────────────┐
+                    │   Next.js     │
+                    │ Admin Console │
+                    └───────┬───────┘
+                            │
+                            ▼
+                    ┌───────────────┐
+                    │      Go       │
+                    │   API / Auth  │
+                    └───────┬───────┘
+                            │
+              ┌─────────────┼─────────────┐
+              ▼             ▼             ▼
+           MongoDB        Redis        Object Store
+              │             │          S3 / MinIO
+              │             │
+              └──────┬──────┘
+                     ▼
+              Policy / Delivery
+                     │
+                     ▼
+                Async Queue
+                     │
+                     ▼
+                Recipient MX
 ```
 
-### 3. Content-Based Data Loss Prevention Engine
-> Supports **100+ tenants with 100+ devices each**, with fully **offline** violation detection
+**Stack:** `Go` `Redis` `MongoDB` `Next.js` `TypeScript` `S3 / MinIO`
 
-**CDC chunking + MinHash/LSH** gives sublinear similarity search. Fingerprint matching runs only when policy criteria are met, which removes redundant computation. Signatures sync from MongoDB to on-device SQLite.
+**→ [View the repository](https://github.com/ryuga001/SecurePlus)**  
+**→ [Open the live console](https://secureplus.onrender.com)**
 
-```mermaid
-flowchart LR
-    A[Content] --> B[CDC<br/>chunking]
-    B --> C[MinHash / LSH<br/>candidate search]
-    C --> D{Policy criteria<br/>met?}
-    D -- yes --> E[Fingerprint<br/>match]
-    D -- no --> F[Skip]
-    M[(MongoDB)] -- sync --> S[(On-device SQLite)]
-    S -.-> C
+---
+
+## 🧠 Engineering Work
+
+A few areas I've worked on professionally and use to guide the systems I build here.
+
+### High-throughput event processing
+
+Worked on a SIEM log-forwarding system handling **2,000+ events/sec in load testing**, using bounded processing and per-destination rate limiting.
+
+```text
+Incoming Events
+      │
+      ▼
+Lock-free Buffer
+      │
+      ▼
+Per-vendor Rate Limit
+      │
+      ▼
+JSON / Syslog
+      │
+      ▼
+HTTP / TCP
 ```
 
-### 4. Cloud Data Discovery
-> Connector architecture, ingestion and processing pipelines for **4 cloud sources**
+The interesting part wasn't just throughput — it was making overload **bounded and predictable** instead of allowing queues and memory to grow indefinitely.
 
-```mermaid
-flowchart LR
-    A[AWS S3] --> E
-    B[Azure Blob] --> E
-    C[Google Drive] --> E
-    D[SharePoint] --> E[Connectors]
-    E --> F[Ingestion] --> G[Processing]
+---
+
+### Distributed bulk processing
+
+Worked on export workloads reaching **10M+ events per run across 100+ tenants**.
+
+The system used:
+
+- RabbitMQ for work distribution
+- Redis token buckets for admission control
+- Tenant-level processing quotas
+- Priority scheduling
+- Multipart S3 uploads
+
+The primary design concern was **fairness under shared infrastructure**.
+
+---
+
+### Content similarity & DLP
+
+Worked on content-aware detection designed around **100+ tenants and 100+ endpoint devices**.
+
+The pipeline uses concepts including:
+
+```text
+File
+ │
+ ▼
+CDC Chunking
+ │
+ ▼
+MinHash
+ │
+ ▼
+LSH Candidate Search
+ │
+ ▼
+Policy Evaluation
+ │
+ ▼
+Fingerprint Matching
+```
+
+The goal is to avoid expensive fingerprinting when cheaper similarity checks can eliminate a candidate first.
+
+---
+
+### Cloud Data Discovery
+
+Built cloud-source integrations around a shared discovery pipeline for:
+
+- AWS S3
+- Azure Blob Storage
+- Google Drive
+- SharePoint
+
+The scanner is designed around **streaming file processing**, so large files don't need to be loaded completely into memory.
+
+```text
+Cloud Provider
+      │
+      ▼
+   Connector
+      │
+      ▼
+   Metadata
+      │
+      ▼
+   Streaming
+      │
+      ▼
+ Processing Pipeline
 ```
 
 ---
 
 ## 🛠️ Tech Stack
 
-<p align="center">
-  <b>Languages</b><br/>
-  <img src="https://skillicons.dev/icons?i=java,go,py,ts,js,cpp" /><br/><br/>
-  <b>Backend</b><br/>
-  <img src="https://skillicons.dev/icons?i=spring,nodejs,express,django,graphql" /><br/><br/>
-  <b>Messaging & Data</b><br/>
-  <img src="https://skillicons.dev/icons?i=rabbitmq,redis,postgres,mongodb,mysql,sqlite" /><br/><br/>
-  <b>Frontend</b><br/>
-  <img src="https://skillicons.dev/icons?i=react,nextjs,tailwind,threejs" /><br/><br/>
-  <b>Cloud & DevOps</b><br/>
+### Languages
+
+<p>
+  <img src="https://skillicons.dev/icons?i=java,go,py,ts,js,cpp" />
+</p>
+
+### Backend
+
+<p>
+  <img src="https://skillicons.dev/icons?i=spring,nodejs,express,django,graphql" />
+</p>
+
+### Data & Messaging
+
+<p>
+  <img src="https://skillicons.dev/icons?i=rabbitmq,redis,postgres,mongodb,mysql,sqlite" />
+</p>
+
+### Frontend
+
+<p>
+  <img src="https://skillicons.dev/icons?i=react,nextjs,tailwind,threejs" />
+</p>
+
+### Cloud & Infrastructure
+
+<p>
   <img src="https://skillicons.dev/icons?i=aws,azure,docker,githubactions,linux,git" />
 </p>
 
+---
+
+## 🔬 Currently Exploring
+
+- Distributed job processing
+- Streaming architectures
+- Backpressure and load shedding
+- Multi-tenant resource isolation
+- Reliable asynchronous workflows
+- Large-scale file processing
+- Cloud storage architectures
+- Security-focused backend systems
+- Go backend development
+- System design
+
+---
+
+## 📈 Competitive Programming
+
+I also enjoy algorithmic problem solving.
+
+| Platform | Rating |
+| --- | --- |
+| Codeforces | **Specialist · 1422 max** |
+| CodeChef | **3★ · 1667 max** |
+
+<a href="https://codeforces.com/profile/ryuga01">Codeforces</a> ·
+<a href="https://www.codechef.com/users/rahul_singh36">CodeChef</a> ·
+<a href="https://leetcode.com/u/r_singh">LeetCode</a>
+
+---
+
+## 📊 GitHub
+
 <p align="center">
-  <sub><code>Distributed Systems</code> · <code>Concurrency</code> · <code>Rate Limiting</code> · <code>Message Queues & Streams</code> · <code>System Design</code> · <code>Similarity Search</code> · <code>Testing & CI/CD</code></sub>
+  <img
+    height="165"
+    src="https://github-readme-stats.vercel.app/api?username=ryuga001&theme=tokyonight&hide_border=true&show_icons=true&count_private=true"
+  />
+  <img
+    height="165"
+    src="https://streak-stats.demolab.com/?user=ryuga001&theme=tokyonight&hide_border=true"
+  />
+</p>
+
+<p align="center">
+  <img
+    width="100%"
+    src="https://github-readme-activity-graph.vercel.app/graph?username=ryuga001&theme=tokyo-night&hide_border=true&area=true"
+  />
 </p>
 
 ---
 
-## 📊 GitHub Activity
-
 <p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=ryuga001&theme=tokyonight&hide_border=true&show_icons=true&count_private=true" />
-  <img height="165" src="https://streak-stats.demolab.com/?user=ryuga001&theme=tokyonight&hide_border=true" />
+  <sub>Build systems. Understand failure. Keep learning.</sub>
 </p>
-
-<p align="center">
-  <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=ryuga001&theme=tokyo-night&hide_border=true&area=true" />
-</p>
-
----
-
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=90&section=footer" alt="footer" />
