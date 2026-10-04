@@ -130,7 +130,6 @@ SMTP
 **Stack:** `Go` `Redis` `MongoDB` `Next.js` `TypeScript` `S3 / MinIO`
 
 **→ [View the repository](https://github.com/ryuga001/SecurePlus)**  
-**→ [Open the live console](https://secureplus.onrender.com)**
 
 ---
 
